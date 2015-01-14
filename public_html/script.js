@@ -6,11 +6,11 @@
 
 
 $("document").ready(function(){
-      $(".practice").css("background-color", "red");
+      $(".practice").css("background-color", "");
       $('.yeah').css('color', "red");
       $('#oneButton').bind('click',alertButtonClick);
       //$('body').css('background-image', '');
-      $('.yeah').css('background-image', 'url(http://media.tumblr.com/dfffa15629e2f76ae4e9614661d76538/tumblr_inline_mwyd8mh9L41qa2sc1.gif)');
+      $('.yeah').css('background-image', 'url(http://www.aliciargomez.com/images/background.jpg)');
 
 });
 
@@ -21,7 +21,7 @@ function alertButtonClick() {
 }
 
 $('document').ready(function() {
-    $('.yeah').css('background-color', 'red');
+    $('.yeah').css('background-color', 'black');
 
 
     $('#replaceWText').bind('click', replaceWText);
@@ -30,6 +30,11 @@ $('document').ready(function() {
 
     $('#removePara').bind('click', removeAPara);
 
+    $('#hide').bind('click', hideThePage);
+    
+    $('#show').bind('click', showThePage);
+   
+    $('#show').bind('click', 'hidden');
 });
 
 
@@ -46,6 +51,53 @@ function replaceWText() {
     $('#replaceWText').text('Replaced!');
 }
 
+
+function hideThePage(){
+    $('#show').css('visibility', 'visible');
+    $('div').hide('slide', {}, 2500);
+    $('#show').show('fold', {}, 2500);
+}
+
+
+function showThePage(){
+    $('diiv').show('fold', {}, 2500);
+    $('#show').hide('puff', {}, 2500);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$(window).load(function() {    
+
+	var theWindow        = $(window),
+	    $bg              = $("#bg"),
+	    aspectRatio      = $bg.width() / $bg.height();
+	    			    		
+	function resizeBg() {
+		
+		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+		    $bg
+		    	.removeClass()
+		    	.addClass('bgheight');
+		} else {
+		    $bg
+		    	.removeClass()
+		    	.addClass('bgwidth');
+		}
+					
+	}
+	                   			
+	theWindow.resize(resizeBg).trigger("resize");
+
+});
 
 
 
