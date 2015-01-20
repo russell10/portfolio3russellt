@@ -1,5 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
+/*  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -10,7 +9,9 @@ $("document").ready(function(){
       $('.yeah').css('color', "white");
       $('#oneButton').bind('click',alertButtonClick);
       //$('body').css('background-image', '');
-      $('.yeah').css('background-image', 'url(https://31.media.tumblr.com/04eade104c0ea8bb29069a1d16594faf/tumblr_inline_ncriy1MOOX1s7wopc.gif)');
+      $('.yeah').css('background-image', 'url()');
+      
+      $('#superHumans').accordion({header: "h3"}); 
 
 });
 
@@ -21,7 +22,7 @@ function alertButtonClick() {
 }
 
 $('document').ready(function() {
-    $('.yeah').css('background-color', 'white');
+    $('.yeah').css('background-color', 'black');
 
 
     $('#replaceWText').bind('click', replaceWText);
@@ -67,14 +68,6 @@ function showThePage(){
 
 
 
-
-
-
-
-
-
-
-
 $(window).load(function() {    
 
 	var theWindow        = $(window),
@@ -100,60 +93,9 @@ $(window).load(function() {
 });
 
 
-// Slightly modified from video version.
-$(document).ready(function() {
-    // Create an audio element, and set it to autoplay, 
-   // and show the player when the page loads.
-    var audio = $('<audio />', {
-      autoPlay : 'autoplay',
-      controls : 'controls'
-    });
-     
-    // Call our addSource function, and pass in the audio element
-    // and the path(s) to your audio.
-    addSource(audio, 'audioFile.ogg');
-    addSource(audio, 'audioFile.mp3');
-   
-    // When some event is fired...
-    $('a').click(function() {
-     // Add the audio + source elements to the page.
-      audio.appendTo('body');  
-      // Fadeout the anchor tag to keep the user from clicking it again.
-      $(this).fadeOut('slow');
-      return false;
-    });
-     
-   // Adds a source element, and appends it to the audio element, represented 
-   // by elem.
-    function addSource(elem, path) {
-      $('<source />').attr('src', path).appendTo(elem);
-    }
-    
+
+
+$( "#target" ).submit(function( event ) {
+  alert( "Handler for .submit() called." );
+  event.preventDefault();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
