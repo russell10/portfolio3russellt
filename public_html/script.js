@@ -4,21 +4,21 @@
  */
 
 
-$("document").ready(function(){
-      $(".practice").css("background-color", "black");
-      $('.yeah').css('color', "white");
-      $('#oneButton').bind('click',alertButtonClick);
-      //$('body').css('background-image', '');
-      $('.yeah').css('background-image', 'url()');
-      
-      $('#superHumans').accordion({header: "h3"}); 
+$("document").ready(function() {
+    $(".practice").css("background-color", "");
+    $('.yeah').css('color', "white");
+    $('#oneButton').bind('click', alertButtonClick);
+    //$('body').css('background-image', '');
+    $('.yeah').css('background-image', 'url(https://31.media.tumblr.com/04eade104c0ea8bb29069a1d16594faf/tumblr_inline_ncriy1MOOX1s7wopc.gif)');
+
+    $('#superHumans').accordion({header: "h3"});
 
 });
 
 function alertButtonClick() {
     alert("There was a button clicked");
-    
-    
+
+
 }
 
 $('document').ready(function() {
@@ -32,9 +32,9 @@ $('document').ready(function() {
     $('#removePara').bind('click', removeAPara);
 
     $('#hide').bind('click', hideThePage);
-    
+
     $('#show').bind('click', showThePage);
-   
+
     $('#show').bind('click', 'hidden');
 });
 
@@ -53,14 +53,14 @@ function replaceWText() {
 }
 
 
-function hideThePage(){
+function hideThePage() {
     $('#show').css('visibility', 'visible');
     $('div').hide('slide', {}, 2500);
     $('#show').show('fold', {}, 2500);
 }
 
 
-function showThePage(){
+function showThePage() {
     $('diiv').show('fold', {}, 2500);
     $('#show').hide('puff', {}, 2500);
 }
@@ -68,34 +68,34 @@ function showThePage(){
 
 
 
-$(window).load(function() {    
+$(window).load(function() {
 
-	var theWindow        = $(window),
-	    $bg              = $("#bg"),
-	    aspectRatio      = $bg.width() / $bg.height();
-	    			    		
-	function resizeBg() {
-		
-		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
-		    $bg
-		    	.removeClass()
-		    	.addClass('bgheight');
-		} else {
-		    $bg
-		    	.removeClass()
-		    	.addClass('bgwidth');
-		}
-					
-	}
-	                   			
-	theWindow.resize(resizeBg).trigger("resize");
+    var theWindow = $(window),
+            $bg = $("#bg"),
+            aspectRatio = $bg.width() / $bg.height();
+
+    function resizeBg() {
+
+        if ((theWindow.width() / theWindow.height()) < aspectRatio) {
+            $bg
+                    .removeClass()
+                    .addClass('bgheight');
+        } else {
+            $bg
+                    .removeClass()
+                    .addClass('bgwidth');
+        }
+
+    }
+
+    theWindow.resize(resizeBg).trigger("resize");
 
 });
 
 
 
 
-$( "#target" ).submit(function( event ) {
-  alert( "Handler for .submit() called." );
-  event.preventDefault();
+$("#target").submit(function(event) {
+    alert("Handler for .submit() called.");
+    event.preventDefault();
 });
