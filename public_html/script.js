@@ -4,12 +4,22 @@
  */
 
 
-$("document").ready(function() {
-    $(".practice").css("background-color", "");
+/* the code below is what is going to be on the background
+ * 
+ * 
+ */
+
+$("document").ready(function() { 
+    $(".practice").css("background-color", "black");
     $('.yeah').css('color', "white");
     $('#oneButton').bind('click', alertButtonClick);
     //$('body').css('background-image', '');
     $('.yeah').css('background-image', 'url(https://31.media.tumblr.com/04eade104c0ea8bb29069a1d16594faf/tumblr_inline_ncriy1MOOX1s7wopc.gif)');
+    
+/* * the coding above makes the baCKGROUND a giff
+*
+*
+*/
 
     $('#superHumans').accordion({header: "h3"});
 
@@ -52,6 +62,10 @@ function replaceWText() {
     $('#replaceWText').text('Replaced!');
 }
 
+
+/*the coding below is what makes the screen go away when i press hide
+ * 
+ */
 
 function hideThePage() {
     $('#show').css('visibility', 'visible');
