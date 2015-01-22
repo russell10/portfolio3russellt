@@ -9,17 +9,17 @@
  * 
  */
 
-$("document").ready(function() { 
+$("document").ready(function() {
     $(".practice").css("background-color", "black");
     $('.yeah').css('color', "white");
     $('#oneButton').bind('click', alertButtonClick);
     //$('body').css('background-image', '');
     $('.yeah').css('background-image', 'url(https://31.media.tumblr.com/04eade104c0ea8bb29069a1d16594faf/tumblr_inline_ncriy1MOOX1s7wopc.gif)');
-    
-/* * the coding above makes the baCKGROUND a giff
-*
-*
-*/
+
+    /* * the coding above makes the baCKGROUND a giff
+     *
+     *
+     */
 
     $('#superHumans').accordion({header: "h3"});
 
