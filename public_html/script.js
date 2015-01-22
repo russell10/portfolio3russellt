@@ -1,7 +1,3 @@
-/*  * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 
 /* the code below is what is going to be on the background
@@ -24,6 +20,9 @@ $("document").ready(function() {
     $('#superHumans').accordion({header: "h3"});
 
 });
+
+/*the code below is what makes my button work
+*/
 
 function alertButtonClick() {
     alert("There was a button clicked");
